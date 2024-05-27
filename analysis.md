@@ -4,7 +4,7 @@
 ![dollar bill](car%20charging.png)
 
 ---
-This report contains the solution of the SQL Project 'Analyzing Electric Vehicle Charging Habits' available on DataCamp. To access the complete project click on this [link](https://projects.datacamp.com/projects/2408).
+This report contains the solution of the SQL Project 'Analyzing Electric Vehicle Charging Habits' available on DataCamp. To access the complete project click on this [link]("https://projects.datacamp.com/projects/2408").
 
 # Introduction
 As electronic vehicles (EVs) become more popular, there is an increasing need for access to charging stations, also known as ports. To that end, many modern apartment buildings have begun retrofitting their parking garages to include shared charging stations. A charging station is shared if it is accessible by anyone in the building.
@@ -34,6 +34,7 @@ Access has been granted to the `charging_sessions` table, which is as follows:
 The full table is provided in [this csv file](charging_sessions.csv)
 
 First, we will take a look at the data in hand by selecting all the columns. Limiting the data to 10 rows to keep the output clean.
+## Query
 
 ```sql
 SELECT *
@@ -41,7 +42,7 @@ FROM charging_sessions
 LIMIT 10
 ```
 
-Output:
+## Output
 | garage_id | user_id | user_type | start_plugin         | start_plugin_hour | end_plugout          | end_plugout_hour | el_kwh | duration_hours | month_plugin | weekdays_plugin |
 |-----------|---------|-----------|----------------------|-------------------|----------------------|------------------|--------|----------------|--------------|----------------|
 | AdO3      | AdO3-4  | Private   | 2018-12-21T10:20:00  | 10                | 2018-12-21T10:23:00  | 10               | 0.3    | 0.05           | Dec          | Friday         |
@@ -76,7 +77,7 @@ GROUP BY garage_id
 ORDER BY unique_users DESC
 ```
 
-Output: 
+## Output:
 | garage_id | unique_users |
 |-----------|--------------|
 | Bl2       | 18           |
