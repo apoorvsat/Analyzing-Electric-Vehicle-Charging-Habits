@@ -34,7 +34,7 @@ Access has been granted to the `charging_sessions` table, which is as follows:
 The full table is provided in [this csv file](charging_sessions.csv)
 
 First, we will take a look at the data in hand by selecting all the columns. Limiting the data to 10 rows to keep the output clean.
-## Query
+### Query
 
 ```sql
 SELECT *
@@ -42,7 +42,7 @@ FROM charging_sessions
 LIMIT 10
 ```
 
-## Output
+### Output
 | garage_id | user_id | user_type | start_plugin         | start_plugin_hour | end_plugout          | end_plugout_hour | el_kwh | duration_hours | month_plugin | weekdays_plugin |
 |-----------|---------|-----------|----------------------|-------------------|----------------------|------------------|--------|----------------|--------------|----------------|
 | AdO3      | AdO3-4  | Private   | 2018-12-21T10:20:00  | 10                | 2018-12-21T10:23:00  | 10               | 0.3    | 0.05           | Dec          | Friday         |
@@ -67,6 +67,8 @@ LIMIT 10
 * Select the `garage_id`, count the _distinct_ `user_id`s and alias it as `unique_users`. 
 * Use the `WHERE` clause to select only the _Shared_ `user_type`s. Group the results by `garage_id` and Order the result in descending order of `unique_users`. 
 
+### Query: 
+
 ```sql
 SELECT 
 	garage_id, 
@@ -77,7 +79,7 @@ GROUP BY garage_id
 ORDER BY unique_users DESC
 ```
 
-## Output:
+### Output:
 | garage_id | unique_users |
 |-----------|--------------|
 | Bl2       | 18           |
