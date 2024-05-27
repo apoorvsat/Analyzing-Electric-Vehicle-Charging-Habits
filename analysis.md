@@ -1,5 +1,5 @@
 
-# <p align="center" style="margin-top: 0px;"> 💸 Analyze International Debt Statistics 📊
+# <p align="center" style="margin-top: 0px;"> 🔋 Analyzing Electric Vehicle Charging Habits 🚗
 
 ![dollar bill](car%20charging.png)
 
